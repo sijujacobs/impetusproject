@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/impetusproject/precache-manifest.686ace02b2b857d9ee7149fcaeee5b23.js"
+  "/impetusproject/precache-manifest.ef29b2ca60d6059ce43eb746febfe3ff.js"
 );
 
 self.addEventListener('message', (event) => {
