@@ -30,7 +30,7 @@ html, body{
     display: grid;
     box-shadow: $bottomBoxShadow;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 10px;
     grid-template-areas:
         "menuBar  statusSection";
         grid-template-columns: 1fr 1fr;
@@ -100,13 +100,7 @@ html, body{
         grid-template-areas:
         "productList  cart";
         grid-template-columns: 1fr 1fr;
-        .productList, .cart{
-            display: grid;
-            height: 65vh;
-            max-height: 65vh;
-            overflow: scroll;
-            row-gap: 5px;
-        }
+        
         .productList{
             grid-area: productList;
             grid-auto-rows: 100px;
@@ -116,6 +110,13 @@ html, body{
         .cart{
             grid-area: cart;
             grid-auto-rows: 70px;
+        }
+        .productList, .cart{
+            display: grid;
+            height: 60vh;
+            max-height: 60vh;
+            overflow: scroll;
+            row-gap: 5px;
         }
     }
 
