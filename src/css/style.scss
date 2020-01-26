@@ -1,0 +1,248 @@
+
+$whiteColor     : antiquewhite;
+$blackColor     : #222;
+$fadeBlackColor : #151515;
+$greyColor      : rgb(144, 144, 144);
+$solidBorder    : 1px solid $greyColor;
+$borderRadius   : 5px;
+$highLightedBG  : #030303;
+$boxShadow      : 2px 2px 10px rgba(1,1,1,0.6);
+$bottomBoxShadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
+$topBoxShadow   : 2px -5px 12px 0px rgba(0,0,0,0.75);
+$transition     : all .5s ease;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $whiteColor;
+}
+
+html, body{
+    background-color: $blackColor;
+}
+
+.home{
+    background-color: coral;
+    width: 100%;
+    height: 100%;
+}
+.project{
+    background-color: darkred;
+    width: 100%;
+    height: 100%;
+}
+.contact{
+    background-color: deepskyblue ;
+    width: 100%;
+    height: 100%;
+}
+
+ul.navMenu li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+  }
+  ul.navMenu {
+    background-color: $blackColor;
+    padding: 0;
+  }
+  ul.navMenu li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .active {
+    background-color: #0099FF;
+  }
+
+
+.appContainer{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'productList cart'
+    'footer footer';
+    grid-template-rows: 120px auto 100px;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    'logoSection statusSection';
+    box-shadow: $bottomBoxShadow;
+    margin-bottom: 20px;
+}
+
+.logoSection{
+    grid-area: logoSection;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    padding-left: 25px;
+}
+.statusSection{
+    grid-area: statusSection;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    padding-right: 30px;
+
+    .cartStatus{
+        background-color: black;
+        padding: 10px;
+        box-shadow: $bottomBoxShadow;
+        border-radius: $borderRadius;
+   }
+}
+
+.productList{
+    grid-area: productList;
+    padding: 10px;
+    display: grid;
+    grid-auto-rows: 120px;
+    row-gap: 5px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.productDetails{
+    border-radius: $borderRadius;
+    display: grid;
+    grid-template-areas: 
+    'productImage productDesc buttonSection';
+    transform: scale(0.98);
+    transition: $transition;
+    background-color: $fadeBlackColor;
+    &:hover{
+        background-color: $highLightedBG;
+        transform: scale(1);
+    }
+}
+
+.productImage{
+    grid-area: productImage;
+
+    justify-items: left;
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: $borderRadius;
+    }
+}
+
+.productDesc{
+    grid-area: productDesc;
+    color: $whiteColor;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttonSection{
+    grid-area: buttonSection;
+    text-align: right;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+}
+.button{
+    padding: 10;
+    width: 120px;
+    height: 30px;
+    color: $whiteColor;
+    border: $solidBorder;
+    border-radius: $borderRadius;
+    background-color: $blackColor;
+    margin-right: 15px;
+    box-shadow: $boxShadow;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.cart{
+    grid-area: cart;
+    display: grid;
+    grid-auto-rows: 70px;
+    row-gap: 5px;
+    padding: 10px;
+}
+
+.cartItem{
+    display: grid;
+    grid-template-areas: 
+    'itemImage itemDesc buttonSection';
+    grid-template-columns: 100px 1fr 150px;
+    border-radius: $borderRadius;
+    transform: scale(0.98);
+    transition: $transition;
+    background-color: $fadeBlackColor;
+    &:hover{
+        background-color: $highLightedBG;
+        transform: scale(1);
+    }
+}
+.itemImage{
+    grid-area: itemImage;
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: $borderRadius;
+    }
+}
+
+.itemDesc{
+    grid-area: itemDesc;
+
+    color: $whiteColor;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.footer{
+    grid-area: footer;
+    box-shadow: $topBoxShadow;
+    margin-top: 30px;
+}
+
+@keyframes expand {
+    from {
+      transform: scale(0);
+      opacity: 0;
+      background: #5470B0;
+    }
+  }
+
+  .fadeItem {
+    animation: expand .5s ease-in-out;
+  }
+  
+  
+
+// .item-enter {
+//     opacity: 0;
+//     transform: scale(0.9);
+//   }
+//   .item-enter-active {
+//     opacity: 1;
+//     transform: translateX(0);
+//     transition: opacity 300ms, transform 300ms;
+//   }
+//   .item-exit {
+//     opacity: 1;
+//   }
+//   .item-exit-active {
+//     opacity: 0;
+//     transform: scale(0.9);
+//     transition: opacity 300ms, transform 300ms;
+//   }
