@@ -95,7 +95,6 @@ html, body{
 
     .projectContainer{
         
-        height: 400px;
         display: grid;
         grid-gap: 5px;
         grid-template-areas:
@@ -103,8 +102,8 @@ html, body{
         grid-template-columns: 1fr 1fr;
         .productList, .cart{
             display: grid;
-            height: 75vh;
-            max-height: 75vh;
+            height: 65vh;
+            max-height: 65vh;
             overflow: scroll;
             row-gap: 5px;
         }
