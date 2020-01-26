@@ -1,22 +1,17 @@
 import React from 'react';
-
-import {connect} from 'react-redux';
+import {NavLink} from "react-router-dom";
 const Header = (props) => {
-    
-    return(<div className="header">
-                <div className="logoSection">IMPETUS</div>
-                <div className="statusSection">
-                    <span className="cartStatus">{props.cartItems.length + " : Items"}</span>
-                </div>
-        </div>)
+
+    return (<div className="header">
+        <ul className="navMenu">
+            <li><NavLink exact to="/">Homes</NavLink></li>
+            <li><NavLink exact to="/cartProject">Project</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+        </ul>
+        <div className="statusSection">
+            <span className="cartStatus"></span>
+        </div>
+    </div>)
 }
 
-
-const mapStateToProps = (state) => {
-    return {
-        cartItems : state.cartReducer.cartItems
-    }
-}
-
-const connectedHeader = connect(mapStateToProps)(Header);
-export default connectedHeader;
+export default Header;
