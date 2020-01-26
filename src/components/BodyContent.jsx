@@ -8,7 +8,7 @@ const BodyContent = () => {
     return (<div className="bodyContent">
         <Route exact path="/" component={Home} />
         <Route exact path="/cartProject" component={CartProject} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/docs" component={Contact} />
     </div>)
 }
 

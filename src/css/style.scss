@@ -40,6 +40,7 @@ html, body{
         justify-items: left;
         align-items: center;
         padding-left: 25px;
+        min-width: 300px;
     }
     .statusSection{
         grid-area: statusSection;
@@ -70,11 +71,13 @@ html, body{
         padding: 0;
       }
       ul.navMenu li a {
+        width: 70px;
         color: #FFF;
+        text-align: center;
         text-decoration: none;
-        padding: 5px 20px;
+        padding: 5px 10px;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 8px;
         border-radius: $borderRadius;
         box-shadow: $bottomBoxShadow;
         transition: $transition;

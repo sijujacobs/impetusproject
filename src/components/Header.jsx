@@ -9,7 +9,7 @@ const Header = (props) => {
             <ul className="navMenu">
                 <li><NavLink exact to="/">Homes</NavLink></li>
                 <li><NavLink exact to="/cartProject">Project</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
+                <li><NavLink to="/docs">Docs</NavLink></li>
             </ul>
         </div>
         <div className="statusSection">
