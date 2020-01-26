@@ -10,8 +10,18 @@ html, body {
   background-color: #222;
 }
 
-.header .logoSection {
-  grid-area: logoSection;
+.header {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "menuBar  statusSection";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header .menuBar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menuBar;
   display: -ms-grid;
   display: grid;
   justify-items: left;
@@ -22,6 +32,8 @@ html, body {
 }
 
 .header .statusSection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: statusSection;
   display: -ms-grid;
   display: grid;
@@ -72,27 +84,28 @@ html, body {
       grid-template-columns: 1fr 1fr;
 }
 
+.projectContainer .productList, .projectContainer .cart {
+  display: -ms-grid;
+  display: grid;
+  height: 500px;
+  max-height: 500px;
+  overflow: scroll;
+  row-gap: 5px;
+}
+
 .projectContainer .productList {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: productList;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-rows: 120px;
+  grid-auto-rows: 100px;
   row-gap: 5px;
-  height: 500px;
-  max-height: 500px;
-  overflow: scroll;
 }
 
 .projectContainer .cart {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: cart;
-  background-color: lightblue;
-  height: 500px;
-  max-height: 500px;
-  overflow: scroll;
+  grid-auto-rows: 70px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,6 +113,14 @@ html, body {
         grid-template-areas: "productList" "cart";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .projectContainer .productList, .projectContainer .cart {
+    display: -ms-grid;
+    display: grid;
+    height: 300px;
+    max-height: 300px;
+    overflow: scroll;
+    row-gap: 5px;
   }
 }
 
@@ -133,8 +154,8 @@ html, body {
 }
 
 .productImage img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 5px;
 }
 

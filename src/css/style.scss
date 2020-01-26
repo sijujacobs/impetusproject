@@ -26,8 +26,12 @@ html, body{
 
   // ----- HEADER
 .header{
-    .logoSection{
-        grid-area: logoSection;
+    display: grid;
+    grid-template-areas:
+        "menuBar  statusSection";
+        grid-template-columns: 1fr 1fr;
+    .menuBar{
+        grid-area: menuBar;
         display: grid;
         justify-items: left;
         align-items: center;
@@ -47,6 +51,8 @@ html, body{
             border-radius: $borderRadius;
        }
     }
+
+
 
     ul.navMenu li {
         display: inline;
@@ -78,24 +84,22 @@ html, body{
         grid-template-areas:
         "productList  cart";
         grid-template-columns: 1fr 1fr;
-        
-        .productList{
-            grid-area: productList;
+        .productList, .cart{
             display: grid;
-            grid-auto-rows: 120px;
-            row-gap: 5px;
             height: 500px;
             max-height: 500px;
             overflow: scroll;
+            row-gap: 5px;
+        }
+        .productList{
+            grid-area: productList;
+            grid-auto-rows: 100px;
+            row-gap: 5px;
         }
 
         .cart{
             grid-area: cart;
-            background-color: lightblue;
-
-            height: 500px;
-            max-height: 500px;
-            overflow: scroll;
+            grid-auto-rows: 70px;
         }
     }
 
@@ -105,6 +109,14 @@ html, body{
             "productList"
             "cart";
             grid-template-columns: 1fr;
+
+            .productList, .cart{
+                display: grid;
+                height: 300px;
+                max-height: 300px;
+                overflow: scroll;
+                row-gap: 5px;
+            }
         }
     } 
 //--- BODY CONTENT
@@ -130,8 +142,8 @@ html, body{
     grid-area: productImage;
     justify-items: left;
     img{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-radius: $borderRadius;
     }
 }
