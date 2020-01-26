@@ -8,6 +8,7 @@
 
 html, body {
   background-color: #222;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -50,7 +51,7 @@ html, body {
 }
 
 .header .statusSection .cartStatus {
-  background-color: #0099FF;
+  background-color: #11496f;
   padding: 5px 10px;
   width: 130px;
   text-align: right;
@@ -91,7 +92,7 @@ html, body {
 }
 
 .header .active {
-  background-color: #0099FF;
+  background-color: #11496f;
 }
 
 .projectContainer {
@@ -107,7 +108,9 @@ html, body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: productList;
-  grid-auto-rows: 100px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 80px;
   row-gap: 5px;
 }
 
@@ -139,6 +142,22 @@ html, body {
   min-height: 500px;
 }
 
+.sectionHeader {
+  width: 97%;
+  margin-left: 10px;
+  background-color: #11496f;
+  -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+  color: antiquewhite;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .productDetails {
   border-radius: 5px;
   display: -ms-grid;
@@ -165,8 +184,8 @@ html, body {
 }
 
 .productImage img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 5px;
 }
 
@@ -200,10 +219,10 @@ html, body {
   padding: 10;
   width: 120px;
   height: 30px;
+  background-color: #11496f;
   color: antiquewhite;
-  border: 1px solid #909090;
+  border: 1px solid #11496f;
   border-radius: 5px;
-  background-color: #222;
   margin-right: 15px;
   -webkit-box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.6);
           box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.6);
@@ -222,7 +241,6 @@ html, body {
   display: grid;
   grid-auto-rows: 70px;
   row-gap: 5px;
-  padding: 10px;
 }
 
 .cartItem {

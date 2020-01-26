@@ -3,6 +3,15 @@ import {NavLink} from "react-router-dom";
 
 import {connect} from 'react-redux';
 const Header = (props) => {
+    const cartStatusClickHandler = () => {
+        let windowWidth = document.documentElement.clientWidth;
+        var cartContainer = document.getElementById('cart');
+        var cartBounds = cartContainer.getBoundingClientRect();
+        if(windowWidth < 600){
+            window.scrollTo(0, (cartBounds.top) ? cartBounds.top : 0);
+        }
+        
+    }
 
     return (<div className="header">
         <div className="menuBar">
@@ -13,7 +22,7 @@ const Header = (props) => {
             </ul>
         </div>
         <div className="statusSection">
-            <span className="cartStatus">{props.cartItems.length + " : Items"}</span>
+            <span className="cartStatus" onClick={() => cartStatusClickHandler()}>{props.cartItems.length + " : Items"}</span>
         </div>
     </div>)
 }

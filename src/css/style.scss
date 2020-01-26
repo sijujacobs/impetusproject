@@ -1,7 +1,7 @@
 
 $whiteColor     : antiquewhite;
 $blackColor     : #222;
-$blueColor      : #0099FF;
+$blueColor      : rgb(17, 73, 111);
 $fadeBlackColor : #151515;
 $greyColor      : rgb(144, 144, 144);
 $solidBorder    : 1px solid $greyColor;
@@ -21,6 +21,7 @@ $transition     : all .5s ease;
 
 html, body{
     background-color: $blackColor;
+    scroll-behavior: smooth;
 }
 
 
@@ -94,16 +95,16 @@ html, body{
 }
 
     .projectContainer{
-        
         display: grid;
         grid-gap: 5px;
         grid-template-areas:
         "productList  cart";
         grid-template-columns: 1fr 1fr;
-        
+
         .productList{
             grid-area: productList;
-            grid-auto-rows: 100px;
+            display: grid;
+            grid-auto-rows: 80px;
             row-gap: 5px;
         }
 
@@ -133,6 +134,18 @@ html, body{
     min-height: 500px;
 }
 
+.sectionHeader{
+    width: 97%;
+    margin-left: 10px;
+    background-color: $blueColor;
+    box-shadow: $bottomBoxShadow;
+    color: $whiteColor;
+    border-radius: $borderRadius;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 .productDetails{
     border-radius: $borderRadius;
     display: grid;
@@ -151,8 +164,8 @@ html, body{
     grid-area: productImage;
     justify-items: left;
     img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: $borderRadius;
     }
 }
@@ -176,10 +189,10 @@ html, body{
     padding: 10;
     width: 120px;
     height: 30px;
+    background-color: $blueColor;
     color: $whiteColor;
-    border: $solidBorder;
+    border: 1px solid $blueColor;
     border-radius: $borderRadius;
-    background-color: $blackColor;
     margin-right: 15px;
     box-shadow: $boxShadow;
     outline: none;
@@ -193,7 +206,6 @@ html, body{
     display: grid;
     grid-auto-rows: 70px;
     row-gap: 5px;
-    padding: 10px;
 }
 
 .cartItem{

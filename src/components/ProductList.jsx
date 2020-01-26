@@ -4,10 +4,13 @@ import ProductDetails from './ProductDetails';
 
 const ProductList = (props) => {
     return(<div className="productList">
-        {
-            (props.photos && props.photos.length > 0) && 
-            props.photos.map(p => <ProductDetails key={p.id} product={p} cartItems={props.cartItems}/>)}
-    </div>)
+                <div className="sectionHeader">Product List</div>
+                {
+                    (props.photos && props.photos.length > 0) && 
+                    props.photos.map(p => <ProductDetails key={p.id} product={p} cartItems={props.cartItems}/>)
+                }
+            
+            </div>)
 }
 
 const mapStateToProps = (state) => {
