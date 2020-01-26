@@ -13,6 +13,10 @@ html, body {
 .header {
   display: -ms-grid;
   display: grid;
+  -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  padding: 15px;
       grid-template-areas: "menuBar  statusSection";
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
@@ -45,8 +49,10 @@ html, body {
 }
 
 .header .statusSection .cartStatus {
-  background-color: black;
-  padding: 10px;
+  background-color: #0099FF;
+  padding: 5px 10px;
+  width: 130px;
+  text-align: right;
   -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
@@ -66,8 +72,19 @@ html, body {
 .header ul.navMenu li a {
   color: #FFF;
   text-decoration: none;
-  padding: 20px;
+  padding: 5px 20px;
   display: inline-block;
+  margin-right: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header ul.navMenu li a:hover {
+  background-color: orange;
+  color: #222;
 }
 
 .header .active {
@@ -252,8 +269,17 @@ html, body {
 }
 
 .footer {
+  grid-area: footer;
   -webkit-box-shadow: 2px -5px 12px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px -5px 12px 0px rgba(0, 0, 0, 0.75);
-  margin-top: 30px;
+  margin-top: 50px;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 
 $whiteColor     : antiquewhite;
 $blackColor     : #222;
+$blueColor      : #0099FF;
 $fadeBlackColor : #151515;
 $greyColor      : rgb(144, 144, 144);
 $solidBorder    : 1px solid $greyColor;
@@ -27,6 +28,9 @@ html, body{
   // ----- HEADER
 .header{
     display: grid;
+    box-shadow: $bottomBoxShadow;
+    margin-bottom: 20px;
+    padding: 15px;
     grid-template-areas:
         "menuBar  statusSection";
         grid-template-columns: 1fr 1fr;
@@ -45,8 +49,10 @@ html, body{
         padding-right: 30px;
     
         .cartStatus{
-            background-color: black;
-            padding: 10px;
+            background-color: $blueColor;
+            padding: 5px 10px;
+            width: 130px;
+            text-align: right;
             box-shadow: $bottomBoxShadow;
             border-radius: $borderRadius;
        }
@@ -66,12 +72,20 @@ html, body{
       ul.navMenu li a {
         color: #FFF;
         text-decoration: none;
-        padding: 20px;
+        padding: 5px 20px;
         display: inline-block;
+        margin-right: 10px;
+        border-radius: $borderRadius;
+        box-shadow: $bottomBoxShadow;
+        transition: $transition;
+        &:hover{
+            background-color: orange;
+            color: $blackColor;
+        }
       }
     
       .active {
-        background-color: #0099FF;
+        background-color: $blueColor;
       }
     
 }
@@ -109,14 +123,6 @@ html, body{
             "productList"
             "cart";
             grid-template-columns: 1fr;
-
-            // .productList, .cart{
-            //     display: grid;
-            //     height: 60vh;
-            //     max-height: 60vh;
-            //     overflow: scroll;
-            //     row-gap: 5px;
-            // }
         }
     } 
 //--- BODY CONTENT
@@ -222,8 +228,14 @@ html, body{
 
 // ----- FOOTER
 .footer{
+    grid-area: footer;
     box-shadow: $topBoxShadow;
-    margin-top: 30px;
+    margin-top: 50px;
+    height: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 0.8em;
 }
 
 
