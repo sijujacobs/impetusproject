@@ -40,7 +40,6 @@ html, body{
         display: grid;
         justify-items: left;
         align-items: center;
-        padding-left: 10px;
         min-width: 250px;
     }
     .statusSection{
@@ -66,11 +65,9 @@ html, body{
     ul.navMenu li {
         display: inline;
         list-style-type: none;
-        margin: 0;
       }
       ul.navMenu {
         background-color: $blackColor;
-        padding: 0;
       }
       ul.navMenu li a {
         width: 70px;
@@ -79,7 +76,7 @@ html, body{
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin-right: 8px;
+        margin-right: 5px;
         border-radius: $borderRadius;
         box-shadow: $bottomBoxShadow;
         transition: $transition;
