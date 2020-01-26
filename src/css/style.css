@@ -87,8 +87,8 @@ html, body {
 .projectContainer .productList, .projectContainer .cart {
   display: -ms-grid;
   display: grid;
-  height: 500px;
-  max-height: 500px;
+  height: 75vh;
+  max-height: 75vh;
   overflow: scroll;
   row-gap: 5px;
 }
@@ -113,14 +113,6 @@ html, body {
         grid-template-areas: "productList" "cart";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-  }
-  .projectContainer .productList, .projectContainer .cart {
-    display: -ms-grid;
-    display: grid;
-    height: 300px;
-    max-height: 300px;
-    overflow: scroll;
-    row-gap: 5px;
   }
 }
 

@@ -86,8 +86,8 @@ html, body{
         grid-template-columns: 1fr 1fr;
         .productList, .cart{
             display: grid;
-            height: 500px;
-            max-height: 500px;
+            height: 75vh;
+            max-height: 75vh;
             overflow: scroll;
             row-gap: 5px;
         }
@@ -110,13 +110,13 @@ html, body{
             "cart";
             grid-template-columns: 1fr;
 
-            .productList, .cart{
-                display: grid;
-                height: 300px;
-                max-height: 300px;
-                overflow: scroll;
-                row-gap: 5px;
-            }
+            // .productList, .cart{
+            //     display: grid;
+            //     height: 60vh;
+            //     max-height: 60vh;
+            //     overflow: scroll;
+            //     row-gap: 5px;
+            // }
         }
     } 
 //--- BODY CONTENT
