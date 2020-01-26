@@ -53,11 +53,12 @@ html, body {
 .header .statusSection .cartStatus {
   background-color: #11496f;
   padding: 5px 10px;
-  width: 130px;
+  width: 100px;
   text-align: right;
   -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .header ul.navMenu li {
@@ -112,6 +113,7 @@ html, body {
   display: grid;
   grid-auto-rows: 80px;
   row-gap: 5px;
+  margin-bottom: 20px;
 }
 
 .projectContainer .cart {
@@ -135,6 +137,9 @@ html, body {
         grid-template-areas: "productList" "cart";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .statusSection {
+    justify-items: left;
   }
 }
 
