@@ -2,9 +2,7 @@ import React from 'react';
 
 const Home = (props) => {
     return(<div className="home">
-           HOME
-
-           <p class="text2">REACT JS 4</p>
+           <p class="text2">REACT APP</p>
         </div>)
 }
 
