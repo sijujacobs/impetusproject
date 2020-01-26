@@ -77,15 +77,25 @@ html, body{
         grid-gap: 5px;
         grid-template-areas:
         "productList  cart";
+        grid-template-columns: 1fr 1fr;
         
         .productList{
             grid-area: productList;
-            background-color: lightpink;
+            display: grid;
+            grid-auto-rows: 120px;
+            row-gap: 5px;
+            height: 500px;
+            max-height: 500px;
+            overflow: scroll;
         }
 
         .cart{
             grid-area: cart;
             background-color: lightblue;
+
+            height: 500px;
+            max-height: 500px;
+            overflow: scroll;
         }
     }
 
@@ -94,11 +104,108 @@ html, body{
             grid-template-areas:
             "productList"
             "cart";
+            grid-template-columns: 1fr;
         }
     } 
 //--- BODY CONTENT
 .bodyContent{
     min-height: 500px;
+}
+
+.productDetails{
+    border-radius: $borderRadius;
+    display: grid;
+    grid-template-areas: 
+    'productImage productDesc buttonSection';
+    transform: scale(0.98);
+    transition: $transition;
+    background-color: $fadeBlackColor;
+    &:hover{
+        background-color: $highLightedBG;
+        transform: scale(1);
+    }
+}
+
+.productImage{
+    grid-area: productImage;
+    justify-items: left;
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: $borderRadius;
+    }
+}
+
+.productDesc{
+    grid-area: productDesc;
+    color: $whiteColor;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttonSection{
+    grid-area: buttonSection;
+    text-align: right;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+}
+.button{
+    padding: 10;
+    width: 120px;
+    height: 30px;
+    color: $whiteColor;
+    border: $solidBorder;
+    border-radius: $borderRadius;
+    background-color: $blackColor;
+    margin-right: 15px;
+    box-shadow: $boxShadow;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.cart{
+    grid-area: cart;
+    display: grid;
+    grid-auto-rows: 70px;
+    row-gap: 5px;
+    padding: 10px;
+}
+
+.cartItem{
+    display: grid;
+    grid-template-areas: 
+    'itemImage itemDesc buttonSection';
+    grid-template-columns: 100px 1fr 150px;
+    border-radius: $borderRadius;
+    transform: scale(0.98);
+    transition: $transition;
+    background-color: $fadeBlackColor;
+    &:hover{
+        background-color: $highLightedBG;
+        transform: scale(1);
+    }
+}
+.itemImage{
+    grid-area: itemImage;
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: $borderRadius;
+    }
+}
+
+.itemDesc{
+    grid-area: itemDesc;
+
+    color: $whiteColor;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 // ----- FOOTER

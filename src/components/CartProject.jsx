@@ -1,9 +1,11 @@
 import React from 'react';
+import ProductList from './ProductList';
+import Cart from './Cart';
 
 const CartProject = (props) => {
     return(<div className="projectContainer">
-           <div className="productList">PRODUCT LIST</div>
-           <div className="cart">CART</div>
+           <ProductList />
+           <Cart />
         </div>)
 }
 

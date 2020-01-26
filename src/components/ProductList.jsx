@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import ProductDetails from './ProductDetails';
-//
 
 const ProductList = (props) => {
     return(<div className="productList">
