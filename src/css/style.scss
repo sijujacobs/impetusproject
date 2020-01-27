@@ -2,6 +2,7 @@
 $whiteColor     : antiquewhite;
 $blackColor     : #222;
 $blueColor      : rgb(17, 73, 111);
+$bgColor        : rgb(20, 87, 131);
 $fadeBlackColor : #151515;
 $greyColor      : rgb(144, 144, 144);
 $solidBorder    : 1px solid $greyColor;
@@ -50,7 +51,7 @@ html, body{
         padding-right: 30px;
     
         .cartStatus{
-            background-color: $blueColor;
+            background-color: $bgColor;
             padding: 5px 10px;
             width: 100px;
             text-align: right;
@@ -87,7 +88,7 @@ html, body{
       }
     
       .active {
-        background-color: $blueColor;
+        background-color: $bgColor;
       }
     
 }
@@ -140,7 +141,7 @@ html, body{
 .sectionHeader{
     width: 97%;
     margin-left: 10px;
-    background-color: $blueColor;
+    background-color: $bgColor;
     box-shadow: $bottomBoxShadow;
     color: $whiteColor;
     border-radius: $borderRadius;
@@ -192,7 +193,7 @@ html, body{
     padding: 10;
     width: 120px;
     height: 30px;
-    background-color: $blueColor;
+    background-color: $bgColor;
     color: $whiteColor;
     border: 1px solid $blueColor;
     border-radius: $borderRadius;
@@ -262,6 +263,15 @@ html, body{
     width: 100%;
     height: 100vh;
     background-color: $blackColor;
+    .homeDesc{
+        text-align: center;
+        width: 100%;
+        margin: 30px;
+        h3{
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
 }
 .backdrop {
     background:             url("../images/code.jpg") center;
@@ -306,9 +316,8 @@ html, body{
 
 
 .text2{
-    font:                           bolder 12vw 'Alfa Slab One';
+    font:                           bolder 12vw 'Times';
     text-align:                     center;
-    margin:                         0;
     background:                     url("../images/code.jpg") center;
     background-size:                contain;
     margin:                         auto;
@@ -316,10 +325,39 @@ html, body{
     background-clip:                text;
     -webkit-background-clip:        text;
     color:                          transparent;
-    box-shadow: $bottomBoxShadow;
 }
 
+.documentation{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+.documentHeader{
+    padding: 20px;
+    background-color: $bgColor;
+    border-radius: $borderRadius;
+    margin-bottom: 20px;
+}
+.topicRow{
+    display: grid;
+    border: $solidBorder;
+    border-radius: $borderRadius;
+    grid-template-areas: 
+    "topicLabel topicDesc";
+    grid-template-columns: 15% auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
 
+}
+.topicLabel{
+    grid-area: topicLabel;
+    grid-gap: 20px;
+}
+
+.topicDesc{
+    grid-area: topicDesc;
+}
 
 
 
