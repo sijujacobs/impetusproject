@@ -11,7 +11,7 @@ const Contact = (props) => {
                 <p>ReactJS</p>
                 <p>Redux, React-Redux, React-Thunk, Axios , gh-pages</p>
                 <p>HTML, CSS, SASS</p>
-                <p>jest</p>
+                <p>Jest and Enzyme</p>
             </div>
         </div>
         <div className="topicRow">
