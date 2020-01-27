@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/impetusproject/static/css/main.2df98b4c.chunk.css",
+    "main.css": "/impetusproject/static/css/main.97d3d8fe.chunk.css",
     "main.js": "/impetusproject/static/js/main.6633cd7e.chunk.js",
     "main.js.map": "/impetusproject/static/js/main.6633cd7e.chunk.js.map",
     "runtime-main.js": "/impetusproject/static/js/runtime-main.6a13a897.js",
@@ -8,16 +8,16 @@
     "static/js/2.52203d9e.chunk.js": "/impetusproject/static/js/2.52203d9e.chunk.js",
     "static/js/2.52203d9e.chunk.js.map": "/impetusproject/static/js/2.52203d9e.chunk.js.map",
     "index.html": "/impetusproject/index.html",
-    "precache-manifest.00ca86dd5c2f8d2eb731f4801fd39553.js": "/impetusproject/precache-manifest.00ca86dd5c2f8d2eb731f4801fd39553.js",
+    "precache-manifest.ee603f86353a8dc712a393019a6180e1.js": "/impetusproject/precache-manifest.ee603f86353a8dc712a393019a6180e1.js",
     "service-worker.js": "/impetusproject/service-worker.js",
-    "static/css/main.2df98b4c.chunk.css.map": "/impetusproject/static/css/main.2df98b4c.chunk.css.map",
+    "static/css/main.97d3d8fe.chunk.css.map": "/impetusproject/static/css/main.97d3d8fe.chunk.css.map",
     "static/js/2.52203d9e.chunk.js.LICENSE": "/impetusproject/static/js/2.52203d9e.chunk.js.LICENSE",
     "static/media/style.css": "/impetusproject/static/media/code.7f7ba521.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6a13a897.js",
     "static/js/2.52203d9e.chunk.js",
-    "static/css/main.2df98b4c.chunk.css",
+    "static/css/main.97d3d8fe.chunk.css",
     "static/js/main.6633cd7e.chunk.js"
   ]
 }
