@@ -16,7 +16,7 @@ const Header = (props) => {
     return (<div className="header">
         <div className="menuBar">
             <ul className="navMenu">
-                <li><NavLink exact to="/">Homes</NavLink></li>
+                <li><NavLink exact to="/">Home</NavLink></li>
                 <li><NavLink exact to="/cartProject">Project</NavLink></li>
                 <li><NavLink to="/docs">Docs</NavLink></li>
             </ul>
