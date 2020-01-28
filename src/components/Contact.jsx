@@ -9,7 +9,7 @@ const Contact = (props) => {
             </div>
             <div className="topicDesc">
                 <p>ReactJS</p>
-                <p>Redux, React-Redux, React-Thunk, Axios , gh-pages</p>
+                <p>Redux, React-Redux, Redux-Thunk, Axios, gh-pages</p>
                 <p>HTML, CSS, SASS</p>
                 <p>Jest and Enzyme</p>
             </div>

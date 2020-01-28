@@ -23,4 +23,3 @@ const mapStateToProps = (state) => {
 
 const connectedProductList = connect(mapStateToProps)(ProductList);
 export default connectedProductList;
-
