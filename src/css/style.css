@@ -50,7 +50,7 @@ html, body {
 }
 
 .header .statusSection .cartStatus {
-  background-color: #145783;
+  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
   padding: 5px 10px;
   width: 100px;
   text-align: right;
@@ -58,6 +58,11 @@ html, body {
           box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.header .statusSection .cartStatus:hover {
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(120, 116, 116, 0.75);
+          box-shadow: 1px 1px 10px 0px rgba(120, 116, 116, 0.75);
 }
 
 .header ul.navMenu li {
@@ -90,7 +95,7 @@ html, body {
 }
 
 .header .active {
-  background-color: #145783;
+  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
 }
 
 .projectContainer {
@@ -147,7 +152,7 @@ html, body {
 .sectionHeader {
   width: 97%;
   margin-left: 10px;
-  background-color: #145783;
+  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
   -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
   color: antiquewhite;
@@ -221,7 +226,7 @@ html, body {
   padding: 10;
   width: 120px;
   height: 30px;
-  background-color: #145783;
+  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
   color: antiquewhite;
   border: 1px solid #11496f;
   border-radius: 5px;
@@ -408,7 +413,7 @@ html, body {
 
 .documentHeader {
   padding: 20px;
-  background-color: #145783;
+  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
   border-radius: 5px;
   margin-bottom: 20px;
 }
