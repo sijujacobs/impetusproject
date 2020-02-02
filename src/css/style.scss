@@ -343,6 +343,7 @@ html, body{
     background-clip:                text;
     -webkit-background-clip:        text;
     color:                          transparent;
+    text-shadow     :               5px 10px 25px #0e0e0e;
 }
 
 .documentation{
@@ -377,5 +378,27 @@ html, body{
     grid-area: topicDesc;
 }
 
+// IMAGE GRID
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+}
+.imageContainer div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: $whiteColor;
+} 
+
+.imageContainer > div:nth-child(odd){
+    background-color: rgb(135, 185, 77);
+}
+.imageContainer > div:nth-child(even){
+    background-color: rgb(227, 87, 87);
+}
 
 

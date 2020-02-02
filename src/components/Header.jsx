@@ -10,14 +10,13 @@ const Header = (props) => {
         if(windowWidth < 600){
             window.scrollTo(0, (cartBounds.top) ? cartBounds.top : 0);
         }
-        
     }
 
     return (<div className="header">
         <div className="menuBar">
             <ul className="navMenu">
                 <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink exact to="/cartProject">Project</NavLink></li>
+                <li><NavLink to="/cartProject">Project</NavLink></li>
                 <li><NavLink to="/docs">Docs</NavLink></li>
             </ul>
         </div>

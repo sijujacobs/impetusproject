@@ -3,11 +3,12 @@ import {connect} from 'react-redux';
 import ProductDetails from './ProductDetails';
 
 const ProductList = (props) => {
+    console.log("ProductList :: props : ", props);
     return(<div className="productList">
                 <div className="sectionHeader">Product List</div>
                 {
                     (props.photos && props.photos.length > 0) && 
-                    props.photos.map(p => <ProductDetails key={p.id} product={p} cartItems={props.cartItems}/>)
+                    props.photos.map(p => <ProductDetails pdTopic={props.newtopic} key={p.id} product={p} cartItems={props.cartItems}/>)
                 }
             
             </div>)

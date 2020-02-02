@@ -401,6 +401,7 @@ html, body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: 5px 10px 25px #0e0e0e;
 }
 
 .documentation {
@@ -442,5 +443,36 @@ html, body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: topicDesc;
+}
+
+.imageContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+  grid-gap: 5px;
+}
+
+.imageContainer div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  color: antiquewhite;
+}
+
+.imageContainer > div:nth-child(odd) {
+  background-color: #87b94d;
+}
+
+.imageContainer > div:nth-child(even) {
+  background-color: #e35757;
 }
 /*# sourceMappingURL=style.css.map */
