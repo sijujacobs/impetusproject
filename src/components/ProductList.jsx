@@ -1,26 +1,46 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import ProductDetails from './ProductDetails';
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { getPhotosByThunkAxios } from "../redux/actions/index";
 
-const ProductList = (props) => {
-    console.log("ProductList :: props : ", props);
-    return(<div className="productList">
-                <div className="sectionHeader">Product List</div>
-                {
-                    (props.photos && props.photos.length > 0) && 
-                    props.photos.map(p => <ProductDetails pdTopic={props.newtopic} key={p.id} product={p} cartItems={props.cartItems}/>)
-                }
-            
-            </div>)
-}
+import ProductDetails from "./ProductDetails";
 
-const mapStateToProps = (state) => {
-    return {
-        photos : state.photoReducer.photos,
-        cartItems : state.cartReducer.cartItems
-    }
-}
+const ProductList = props => {
+  const { loading, photos, getPhotosByThunkAxios } = props;
 
+  useEffect(() => {
+    getPhotosByThunkAxios();
+  }, [getPhotosByThunkAxios]);
 
-const connectedProductList = connect(mapStateToProps)(ProductList);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  return (
+    <div className="productList">
+      <div className="sectionHeader">Product List</div>
+      {photos &&
+        photos.length > 0 &&
+        photos.map(p => (
+          <ProductDetails key={p.id} product={p} cartItems={props.cartItems} />
+        ))}
+    </div>
+  );
+};
+
+const mapStateToProps = state => {
+  return {
+    photos: state.photoReducer.photos,
+    loading: state.photoReducer.loading,
+    cartItems: state.cartReducer.cartItems
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    getPhotosByThunkAxios: () => dispatch(getPhotosByThunkAxios())
+  };
+};
+
+const connectedProductList = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductList);
 export default connectedProductList;
