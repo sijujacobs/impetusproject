@@ -20,8 +20,8 @@ const photoReducer = (state = initialState, action) => {
     case FETCH_PRODUCTS_SUCCESS:
       return {
         ...state,
-        loading: false,
-        photos: action.payload.products
+        loading: true
+        // photos: action.payload.products
       };
     case FETCH_PRODUCTS_FAILURE:
       return {
