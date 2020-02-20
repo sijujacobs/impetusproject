@@ -491,17 +491,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.53);
+  background-color: rgba(63, 109, 123, 0.83);
 }
 
 .loader {
-  border: 10px solid #249e2d;
+  border: 5px solid #b2e9b6;
   border-radius: 50%;
-  border-top: 10px solid #0b65a2;
-  width: 80px;
-  height: 80px;
+  border-top: 5px solid #0b65a2;
+  width: 3em;
+  height: 3em;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
+  -webkit-box-shadow: 2px 2px 25px 15px rgba(47, 53, 50, 0.6);
+          box-shadow: 2px 2px 25px 15px rgba(47, 53, 50, 0.6);
 }
 
 /* Safari */
