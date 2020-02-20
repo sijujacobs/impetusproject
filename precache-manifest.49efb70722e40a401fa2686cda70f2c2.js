@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6b8cef0cc76be7255ef3febf80aaad3",
+    "revision": "5609f80947d09520e2db153770d1f329",
     "url": "/impetusproject/index.html"
   },
   {
-    "revision": "43498a1abf592d39cebe",
-    "url": "/impetusproject/static/css/main.e845892c.chunk.css"
+    "revision": "dab807354b7faf1bcf76",
+    "url": "/impetusproject/static/css/main.7aa9e0f9.chunk.css"
   },
   {
     "revision": "4de854439222978f0f96",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/impetusproject/static/js/2.308a86a7.chunk.js.LICENSE"
   },
   {
-    "revision": "43498a1abf592d39cebe",
-    "url": "/impetusproject/static/js/main.e108e15a.chunk.js"
+    "revision": "dab807354b7faf1bcf76",
+    "url": "/impetusproject/static/js/main.5982da0e.chunk.js"
   },
   {
     "revision": "da0d152361031617743e",
