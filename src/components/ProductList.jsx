@@ -12,7 +12,11 @@ const ProductList = props => {
   }, [getPhotosByThunkAxios]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loaderWrapper">
+        <div className="loader"></div>
+      </div>
+    );
   }
   return (
     <div className="productList">
