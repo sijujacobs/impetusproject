@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/impetusproject/static/css/main.7aa9e0f9.chunk.css",
-    "main.js": "/impetusproject/static/js/main.5982da0e.chunk.js",
-    "main.js.map": "/impetusproject/static/js/main.5982da0e.chunk.js.map",
+    "main.css": "/impetusproject/static/css/main.c7124108.chunk.css",
+    "main.js": "/impetusproject/static/js/main.de4ef5ac.chunk.js",
+    "main.js.map": "/impetusproject/static/js/main.de4ef5ac.chunk.js.map",
     "runtime-main.js": "/impetusproject/static/js/runtime-main.6a13a897.js",
     "runtime-main.js.map": "/impetusproject/static/js/runtime-main.6a13a897.js.map",
     "static/js/2.308a86a7.chunk.js": "/impetusproject/static/js/2.308a86a7.chunk.js",
     "static/js/2.308a86a7.chunk.js.map": "/impetusproject/static/js/2.308a86a7.chunk.js.map",
     "index.html": "/impetusproject/index.html",
-    "precache-manifest.49efb70722e40a401fa2686cda70f2c2.js": "/impetusproject/precache-manifest.49efb70722e40a401fa2686cda70f2c2.js",
+    "precache-manifest.0a2283251ff7b3a1c21cc8e83e0645f9.js": "/impetusproject/precache-manifest.0a2283251ff7b3a1c21cc8e83e0645f9.js",
     "service-worker.js": "/impetusproject/service-worker.js",
-    "static/css/main.7aa9e0f9.chunk.css.map": "/impetusproject/static/css/main.7aa9e0f9.chunk.css.map",
+    "static/css/main.c7124108.chunk.css.map": "/impetusproject/static/css/main.c7124108.chunk.css.map",
     "static/js/2.308a86a7.chunk.js.LICENSE": "/impetusproject/static/js/2.308a86a7.chunk.js.LICENSE",
     "static/media/style.css": "/impetusproject/static/media/code.7f7ba521.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6a13a897.js",
     "static/js/2.308a86a7.chunk.js",
-    "static/css/main.7aa9e0f9.chunk.css",
-    "static/js/main.5982da0e.chunk.js"
+    "static/css/main.c7124108.chunk.css",
+    "static/js/main.de4ef5ac.chunk.js"
   ]
 }
