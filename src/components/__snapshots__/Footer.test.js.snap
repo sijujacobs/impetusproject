@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly in "debug" mode 1`] = `
+<div
+  className="footer"
+>
+  <p>
+    A Project on React  
+    <span>
+      © 
+      2020
+    </span>
+  </p>
+</div>
+`;

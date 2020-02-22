@@ -33,16 +33,6 @@ const ProductList = props => {
     );
   }
   return renderElement;
-  // return (
-  //   <div className="productList">
-  //     <div className="sectionHeader">Product List</div>
-  //     {photos &&
-  //       photos.length > 0 &&
-  //       photos.map(p => (
-  //         <ProductDetails key={p.id} product={p} cartItems={props.cartItems} />
-  //       ))}
-  //   </div>
-  // );
 };
 
 const mapStateToProps = state => {
