@@ -51,7 +51,7 @@ body {
 }
 
 .header .statusSection .cartStatus {
-  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
+  background: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
   padding: 5px 10px;
   width: 100px;
   text-align: right;
@@ -96,7 +96,7 @@ body {
 }
 
 .header .active {
-  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
+  background: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
 }
 
 .projectContainer {
@@ -154,7 +154,7 @@ body {
 .sectionHeader {
   width: 97%;
   margin-left: 10px;
-  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
+  background: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
   -webkit-box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.75);
   color: antiquewhite;
@@ -228,7 +228,7 @@ body {
   padding: 10;
   width: 120px;
   height: 30px;
-  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
+  background: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
   color: antiquewhite;
   border: 1px solid #11496f;
   border-radius: 5px;
@@ -416,7 +416,7 @@ body {
 
 .documentHeader {
   padding: 20px;
-  background: linear-gradient(84deg, #15589f 0%, #155687 34%, #1f9f30 100%);
+  background: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
   border-radius: 5px;
   margin-bottom: 20px;
 }

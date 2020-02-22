@@ -2,12 +2,7 @@ $whiteColor: antiquewhite;
 $blackColor: #222;
 $blueColor: rgb(17, 73, 111);
 $bgColor: rgb(8, 142, 23);
-$gradientBGColor: linear-gradient(
-  84deg,
-  rgba(21, 88, 159, 1) 0%,
-  rgba(21, 86, 135, 1) 34%,
-  rgba(31, 159, 48, 1) 100%
-);
+$gradientBGColor: linear-gradient(84deg, #1f979f, #155687 50%, #1f979f);
 $fadeBlackColor: #151515;
 $greyColor: rgb(144, 144, 144);
 $solidBorder: 1px solid $greyColor;
